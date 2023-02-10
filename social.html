@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    
+    <link rel="stylesheet" href="social.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="photos/logo.png" class="logo">
+            <ul>
+                <li><img src="photos/notification.png"></li>
+                <li><img src="photos/inbox.png"></li>
+                <li><img src="photos/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="photos/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="photos/profile-pic.png">
+            </div>
+        </div>
+        <!--settings-menu--><!--drop-down-menu-->
+        <div class="settings-menu">
+
+
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+
+
+
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="photos/profile-pic.png" >
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="photos/feedback.png" >
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help Us Improve New Design </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="photos/setting.png" class="settings-icon">
+                    <a href="">Settings & Privacy <img src="photos/arrow.png" width="10px"> </a>
+                </div>
+                <div class="setting-links">
+                    <img src="photos/help.png" class="settings-icon">
+                    <a href="">Help & Support <img src="photos/arrow.png" width="10px"> </a>
+                </div>
+                <div class="setting-links">
+                    <img src="photos/display.png" class="settings-icon">
+                    <a href="">Display & Accesibility <img src="photos/arrow.png" width="10px"> </a>
+                </div>
+                <div class="setting-links">
+                    <img src="photos/logout.png" class="settings-icon">
+                    <a href="">Logout<img src="photos/arrow.png" width="10px"> </a>
+                </div>
+
+            </div>
+            
+        </div>
+    </nav>
+<!--Columns-->
+
+    <div class="container">
+        <div class="left-sidebar">
+            <!--left sidebar-->
+             <div class="imp-links">
+                 <a href="#"><img src="photos/news.png">Latest News</a>
+                 <a href="#"><img src="photos/friends.png">Friends</a>
+                 <a href="#"><img src="photos/group.png">Group</a>
+                 <a href="#"><img src="photos/marketplace.png">Marketplace</a>
+                 <a href="#"><img src="photos/watch.png">Watch</a>
+                 <a href="#">See More</a>
+             </div>
+             <div class="shortcut-links">
+                 <p>Your Shortcuts</p>
+                 <a href="#"><img src="photos/shortcut-1.png">Web Developers</a>
+                 <a href="#"><img src="photos/shortcut-2.png">Web Design Course</a>
+                 <a href="#"><img src="photos/shortcut-3.png">Full Stack Developers</a>
+                 <a href="#"><img src="photos/shortcut-4.png">Website Experts</a>
+             </div>
+
+        </div>
+
+
+
+
+
+
+
+
+                
+            <!--main content-->
+
+
+
+
+
+
+        
+        <div class="main_content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="photos/upload.png" >
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="photos/member-1.png" >
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="photos/member-2.png" >
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="photos/member-3.png" >
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="photos/member-4.png" >
+                    <p>Harris</p>
+                </div>
+                <div class="story story6">
+                    <img src="photos/member-5.png" >
+                    <p>Peter</p>
+                </div>
+                <div class="story story7">
+                    <img src="photos/member-6.png" >
+                    <p>Kelvin Hart</p>
+                </div>
+
+
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="photos/profile-pic.png" >
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public</small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="photos/live-video.png">Live Video</a>
+                        <a href="#"><img src="photos/photo.png">Photo/Video</a>
+                        <a href="#"><img src="photos/feeling.png">Feeling Activity</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="photos/profile-pic.png" >
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 24, 2021 ; 13:40pm</span>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="post-text">Subscribe <span>@JimGraphics</span> to watch more videos on website development and UI designs
+                     <a href="#">#Easy Tutorials</a> <a href="#">#Youtube Channels</a> </p>
+                     <img src="photos/feed-image-1.png"  class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="photos/like-blue.png">120</div>
+                        <div><img src="photos/comments.png">20</div>
+                        <div><img src="photos/share.png">78</div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photos/profile-pic.png">
+                    </div>
+
+                </div>     
+
+            </div>
+            
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="photos/member-3.png" >
+                        <div>
+                            <p>Ian Parker</p>
+                            <span>June 15, 2021 ; 9:45pm</span>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="post-text">Subscribe <span>@PhotoEssentials</span> to learn more about how to get better photo quality with any Camera
+                     <a href="#">#Easy Tutorials</a> <a href="#">#Photoshop</a> </p>
+                     <img src="photos/feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="photos/like.png">250</div>
+                        <div><img src="photos/comments.png">26</div>
+                        <div><img src="photos/share.png">120</div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photos/member-3.png">
+                    </div>
+
+                </div>     
+
+            </div>
+            
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="photos/member-2.png" >
+                        <div>
+                            <p>Steve Harvey</p>
+                            <span>June 19, 2021 ; 8:40am</span>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="post-text">Feeling <span>fantastic</span> walking and chilling with
+                     myfriends after watching the newly released film
+                     <a href="#">#Click Click Bang</a> You Should check it out at <a href="#">#KenyaFilms</a> </p>
+                     <img src="photos/feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="photos/like.png">340</div>
+                        <div><img src="photos/comments.png">25</div>
+                        <div><img src="photos/share.png">20</div>
+                        
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="photos/member-2.png">
+                    </div>
+
+                </div>     
+
+            </div>
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+
+
+
+
+
+
+                                    
+            <!--right sidebar-->
+
+
+
+
+
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                 <div class="left-event">
+                     <h3>18</h3>
+                     <span>March</span>
+                 </div>
+                 <div class="right-event">
+                     <h4>Social Media</h4>
+                     <p> <img src="photos/location.png" class="location"> Wilson Tech Park</p>
+                     <a href="#">More Info</a>
+                 </div>
+            </div>
+
+            <div class="event">
+                  <div class="left-event">
+                      <h3>22</h3>
+                      <span>June</span>
+                  </div>
+                  <div class="right-event">
+                      <h4>Mobile Marketing</h4>
+                      <p><img src="photos/location.png" class="location"> Safaricom PLC HQ</p>
+                      <a href="#">More Info</a>
+                  </div>
+            </div>
+
+            
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="photos/advertisement.png" class="sidebar-add">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="people-online">
+                
+                <div class="online-list">
+                    <div class="online">
+                        <img src="photos/member-1.png" >
+                    </div>
+                    <p>Alison Mina</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="photos/member-2.png" >
+                    </div>
+                    <p>Jurgen Klopp</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="photos/member-3.png" >
+                    </div>
+                    <p>Samora Rose</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="photos/member-4.png" >
+                    </div>
+                    <p>Kelvin Hart</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="photos/member-5.png" >
+                    </div>
+                    <p>Dwayne Johson</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="photos/member-6.png" >
+                    </div>
+                    <p>Jackie Moon</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+<footer>
+    <p>Copyright 2021 - Sociabook</p>
+</footer>
+    <script src="social.js"></script>
+</body>
+
+</html>
