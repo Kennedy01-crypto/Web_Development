@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Gallery - Rodrigo Landa</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Rodrigo Landa</h1>
+      <p class="header-subtitle">Photography Portfolio</p>
+      <nav>
+        <a href="index.html"><i class="fas fa-user"></i> About</a>
+        <a href="services.html"><i class="fas fa-code"></i> Services</a>
+        <a href="portfolio.html"><i class="fas fa-folder"></i> Portfolio</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+    </header>
+
+    <section class="gallery-container">
+      <ul
+        class="slides"
+        style="border: 5px red"
+        data-mouse-start="0"
+        data-prev-percentage="0"
+        data-percentage="0"
+      >
+        <li class="item">
+          <img src="images/IMG_20231213_020911_332.jpg" alt="Gallery Image 1" />
+        </li>
+        <li class="item">
+          <img src="images/IMG_20231213_020940_501.jpg" alt="Gallery Image 2" />
+        </li>
+        <li class="item">
+          <img src="images/IMG_20231213_021000_403.jpg" alt="Gallery Image 3" />
+        </li>
+        <li class="item">
+          <img src="images/IMG_20231213_021145_442.jpg" alt="Gallery Image 4" />
+        </li>
+        <li class="item">
+          <img src="images/IMG_20231213_021206_007.jpg" alt="Gallery Image 5" />
+        </li>
+        <li class="item">
+          <img src="images/IMG_20231213_021241_156.jpg" alt="Gallery Image 6" />
+        </li>
+        <li class="item">
+          <img src="images/IMG_20231213_021256_911.jpg" alt="Gallery Image 7" />
+        </li>
+        <li class="item">
+          <img src="images/IMG_20231213_021317_063.jpg" alt="Gallery Image 8" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <img src="" alt="Full size image" />
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Rodrigo Landa. All Rights Reserved.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
