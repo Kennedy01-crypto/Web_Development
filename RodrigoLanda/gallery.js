@@ -2,7 +2,7 @@
 const modal = document.querySelector(".modal");
 const modalImg = modal.querySelector("img");
 const closeBtn = modal.querySelector(".close-modal");
-const galleryImages = document.querySelectorAll(".item img");
+const galleryImages = document.querySelectorAll(".gallery-item img");
 
 galleryImages.forEach((img) => {
   img.addEventListener("click", (e) => {
