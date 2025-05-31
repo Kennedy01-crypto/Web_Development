@@ -13,7 +13,8 @@ export const LoginPage = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User Logged in Successfully");
-      toast.success("User Registerd successfully", { position: "top-center" });
+      toast.success("Logged in successfully", { position: "top-center" });
+      window.location.href = "/profile";
     } catch (err) {
       console.log(err.message);
       toast.error(err.message, { position: "top-center" });
