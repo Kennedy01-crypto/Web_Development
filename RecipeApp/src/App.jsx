@@ -1,13 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import SignUpPage from "./pages/SignUpPage";
 import { LoginPage } from "./pages/LoginPage";
-
+import { Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 function App() {
   return (
     <>
-      <LoginPage />
+      <Routes>
+        <Route path="/sign-up" element={<SignUpPage />} />
+        <Route path="/log-in" element={<LoginPage />} />
+      </Routes>
+      <ToastContainer />
     </>
   );
 }
