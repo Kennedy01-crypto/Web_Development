@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../components/firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
+import { NavLink } from "react-router-dom";
 
 const SignUpPage = () => {
   const [name, setName] = useState("");
@@ -126,7 +127,7 @@ const SignUpPage = () => {
               type="submit"
               className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 rounded-lg mb-4 transition"
             >
-              SIGN UP
+              Sign Up
             </button>
 
             {/* Divider */}
@@ -161,12 +162,12 @@ const SignUpPage = () => {
             {/* Sign in link */}
             <div className="text-center text-sm">
               Have an account?{" "}
-              <a
-                href="#"
+              <NavLink
+                to="/log-in"
                 className="text-blue-600 font-semibold hover:underline"
               >
                 Sign in
-              </a>
+              </NavLink>
             </div>
           </form>
           {/* Footer */}
