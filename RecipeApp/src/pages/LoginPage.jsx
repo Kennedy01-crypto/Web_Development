@@ -3,6 +3,7 @@ import loginImg from "../assets/login-image.jpg";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../components/firebase";
 import { toast } from "react-toastify";
+import { NavLink } from "react-router-dom";
 
 export const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -116,12 +117,12 @@ export const LoginPage = () => {
             {/* Sign up link */}
             <div className="text-center text-sm">
               Don't you have an account?{" "}
-              <a
-                href="#"
+              <NavLink
+                to="/sign-up"
                 className="text-blue-600 font-semibold hover:underline"
               >
                 Sign up
-              </a>
+              </NavLink>
             </div>
           </form>
           {/* Footer */}
