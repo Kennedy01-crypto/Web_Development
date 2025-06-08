@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { auth, db } from "../components/firebase";
 import { getDoc, doc } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
+import { Footer } from "../components/Footer";
 import { toast } from "react-toastify";
 import {
   Hamburger,
@@ -112,31 +113,8 @@ export const ProfilePage = () => {
       )}
 
       {/* Bottom Navigation */}
-      <nav className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 flex justify-between px-2 py-2">
-        <a href="#" className="flex flex-col items-center flex-1 text-gray-500">
-          <Home />
-          <span className="text-xs">Home</span>
-        </a>
-        <a href="#" className="flex flex-col items-center flex-1 text-gray-500">
-          <Lightbulb />
-          <span className="text-xs">About</span>
-        </a>
-        <a href="#" className="flex flex-col items-center flex-1 text-gray-500">
-          <Hamburger />
-          <span className="text-xs">Recipes</span>
-        </a>
-        <a href="#" className="flex flex-col items-center flex-1 text-gray-500">
-          <Heart />
-          <span className="text-xs">Favorites</span>
-        </a>
-        <a
-          href="#"
-          className="flex flex-col items-center flex-1 text-orange-500"
-        >
-          <UserRound />
-          <span className="text-xs font-semibold">Profile</span>
-        </a>
-      </nav>
+
+      <Footer />
     </main>
   );
 };
