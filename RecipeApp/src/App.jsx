@@ -6,6 +6,11 @@ import { ToastContainer } from "react-toastify";
 import { ProfilePage } from "./pages/ProfilePage";
 import { auth } from "./components/firebase";
 import { useEffect, useState } from "react";
+import { Favorites } from "./pages/Favorites";
+import { Recipe } from "./pages/Recipe";
+import { Home } from "./pages/Home";
+import { About } from "./pages/about";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [user, setUser] = useState();
@@ -14,6 +19,10 @@ function App() {
       setUser(user);
     });
   });
+
+  // Determine if the current path should hide the footer
+  const hideFooterPaths = ["/", "/log-in", "/sign-up"];
+  const shouldHideFooter = hideFooterPaths.includes(location.pathname);
 
   return (
     <>
@@ -25,7 +34,14 @@ function App() {
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/log-in" element={<LoginPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/recipe" element={<Recipe />} />
       </Routes>
+
+      {/* Conditionally render the Footer */}
+      {!shouldHideFooter && <Footer />}
       <ToastContainer />
     </>
   );
