@@ -82,7 +82,7 @@ export const ProfilePage = () => {
       {userDetails ? (
         <>
           {/* Profile Avatar and Info */}
-          <div className="flex  flex-col md:flex-row h-full items-center py-6 gap-5 ">
+          <div className="flex  flex-col md:flex-row h-full items-center p-6 gap-5 ">
             <UserRound
               alt="Profile"
               className="w-32 h-32 md:w-50 md:h-50 rounded-full bg-orange-100 object-cover"
