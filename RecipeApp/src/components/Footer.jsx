@@ -11,8 +11,8 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer>
-      <nav className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 flex justify-between px-2 py-2">
+    <footer className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-md z-50">
+      <nav className=" md:hidden left-0 w-full bg-white border-t border-gray-200 flex justify-between px-2 py-2">
         <NavLink
           to="/home"
           className={({ isActive }) =>
