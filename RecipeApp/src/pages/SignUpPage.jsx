@@ -141,7 +141,10 @@ const SignUpPage = () => {
 
             {/* Social Buttons */}
             <div className="flex gap-3 mb-4">
-              <button className="flex items-center gap-2 w-1/2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 rounded-lg border border-gray-300 justify-center">
+              <button
+                type="button"
+                className="flex items-center gap-2 w-1/2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 rounded-lg border border-gray-300 justify-center"
+              >
                 <img
                   src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000"
                   alt="Google"
@@ -149,7 +152,10 @@ const SignUpPage = () => {
                 />
                 <span>Google</span>
               </button>
-              <button className="flex items-center gap-2 w-1/2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 rounded-lg border border-gray-300 justify-center">
+              <button
+                type="button"
+                className="flex items-center gap-2 w-1/2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 rounded-lg border border-gray-300 justify-center"
+              >
                 <img
                   src="https://img.icons8.com/?size=100&id=p62ASPK2Kpqp&format=png&color=000000"
                   alt="Facebook"
