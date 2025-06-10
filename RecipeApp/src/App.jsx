@@ -18,14 +18,14 @@ function App() {
     auth.onAuthStateChanged((user) => {
       setUser(user);
     });
-  });
+  }, [user]);
 
   // Determine if the current path should hide the footer
   const hideFooterPaths = ["/", "/log-in", "/sign-up"];
   const shouldHideFooter = hideFooterPaths.includes(location.pathname);
 
   return (
-    <>
+    <div className="relative pb-[50px] lg:pb-[72px]">
       <Routes>
         <Route
           path="/"
@@ -41,9 +41,9 @@ function App() {
       </Routes>
 
       {/* Conditionally render the Footer */}
-      {!shouldHideFooter && <Footer />}
+      {!shouldHideFooter && <Footer className="fixed bottom-0 right-0" />}
       <ToastContainer />
-    </>
+    </div>
   );
 }
 
